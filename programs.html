@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>programs- Suhasa School</title>
+    <div id="navbar-container"></div>
+
+    <script>
+        // Load the navbar using fetch
+        document.addEventListener("DOMContentLoaded", () => {
+            fetch('navbar.html')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Failed to fetch navbar');
+                    }
+                    return response.text();
+                })
+                .then(html => {
+                    document.getElementById('navbar-container').innerHTML = html;
+                })
+                .catch(error => console.error('Error loading navbar:', error));
+        });
+    </script>
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #2c3e50;
+        }
+
+        .why-join-section {
+            text-align: center;
+            background: linear-gradient(135deg, #e67e22, #d35400);
+            color: white;
+            padding: 20px 20px;
+        }
+
+        .why-join-section h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        /* Content Section */
+        .content-section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .content-card {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin: 40px 0;
+        }
+
+        .content-card:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .content-text {
+            flex: 1;
+        }
+
+        .content-text h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .content-text p {
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .content-image {
+            flex: 1;
+            max-width: 50%;
+        }
+
+        .content-image img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            border: 5px solid #fdd835; /* Border added */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .content-card {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .content-card:nth-child(even) {
+                flex-direction: column;
+            }
+
+            .content-image {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--All programs -->
+    <div class="why-join-section">
+        <h1>Programs Offered</h1>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content-section">
+
+        <!-- Card 1 -->
+        <div class="content-card">
+            <div class="content-text">
+                <h2> Infant Program</h2>
+                <p class="paragraph"> Focuses on nurturing care, sensory exploration, and foundational developmental milestones.</p>
+            </div>
+            <div class="content-image">
+                <img src="programms1.jpg" alt="Learning Space">
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="content-card">
+            <div class="content-text">
+                <h2>Toddler Program</h2>
+                <p class="paragraph"> ncourages language development, motor skills, and social interaction through play-based learning.</p>
+            </div>
+            <div class="content-image">
+                <img src="programms2.jpg" alt="Early Childhood Development">
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="content-card">
+            <div class="content-text">
+                <h2> Discovery Preschool</h2>
+                <p class="paragraph"> Introduces structured activities that promote curiosity, basic concepts, and independence.</p>
+            </div>
+            <div class="content-image">
+                <img src="programms3.jpeg" alt="Diversity and Culture">
+            </div>
+        </div>
+  <!-- Card 4 -->
+  <div class="content-card">
+    <div class="content-text">
+        <h2>Preschool Program</h2>
+        <p> Prepares children for kindergarten with activities that enhance literacy, numeracy, and social skills. </p>
+    </div>
+    <div class="content-image">
+        <img src="programms4.jpeg" alt="Learning Space">
+    </div>
+</div>
+ <!-- Card 5-->
+ <div class="content-card">
+    <div class="content-text">
+        <h2>Prekindergarten Program</h2>
+        <p class="paragraph">Offers a more structured curriculum focusing on readiness for formal schooling, including problem-solving and critical
+            thinking skills.</p>
+    </div>
+    <div class="content-image">
+        <img src="preprogramms5.jpeg" alt="Learning Space">
+    </div>
+</div>
+ <!-- Card 6-->
+ <div class="content-card">
+    <div class="content-text">
+        <h2> Transitional Kindergarten </h2>
+        <p class="paragraph"> Bridges the gap between preschool and kindergarten, providing a modified curriculum for younger learners.</p>
+    </div>
+    <div class="content-image">
+        <img src="preprogramms7.jpeg" alt="Learning Space">
+    </div>
+</div>
+ <!-- Card 7 -->
+ <div class="content-card">
+    <div class="content-text">
+        <h2> Kindergarten</h2>
+        <p class="paragraph"> Implements a comprehensive curriculum covering language arts, mathematics, science, and social studies to ensure school
+            readiness.</p>
+    </div>
+    <div class="content-image">
+        <img src="preprogramms8.jpeg" alt="Learning Space">
+    </div>
+</div>
+ <!-- Card 8 -->
+ <div class="content-card">
+    <div class="content-text">
+        <h2>Special Programs</h2>
+        <p class="paragraph">  • Summer Camps: Engaging activities during summer to continue learning and social interaction.
+            • After-School Enrichment: Additional programs focusing on arts, sports, or academics beyond regular school hours.</p>
+    </div>
+    <div class="content-image">
+        <img src="preprogramms9.jpeg" alt="Learning Space">
+    </div>
+</div>
+ <!-- Card 9-->
+ <div class="content-card">
+    <div class="content-text">
+        <h2> Parent-Toddler Programs</h2>
+        <p class="paragraph"> Designed for parents and toddlers to participate together, fostering bonding and early development.</p>
+    </div>
+    <div class="content-image">
+        <img src="kids 2.jpg" alt="Learning Space">
+    </div>
+</div>
+    </div>
+
+</body>
+
+</html>

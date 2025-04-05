@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>why us</title>
+    <div id="navbar-container"></div>
+
+    <script>
+        // Load the navbar using fetch
+        document.addEventListener("DOMContentLoaded", () => {
+            fetch('navbar.html')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Failed to fetch navbar');
+                    }
+                    return response.text();
+                })
+                .then(html => {
+                    document.getElementById('navbar-container').innerHTML = html;
+                })
+                .catch(error => console.error('Error loading navbar:', error));
+        });
+    </script>
+</head>
+<body>
+     <!------   --  ---------------------why us ------------------------------>
+   <section class="why-us-section">
+    <section class="whyus1">
+      <h2>Why Us</h2>
+    </section>
+  <!-- Reason 1 -->
+    <div class="why-item">
+      <img src="suhasapic.jpg" alt="Vibrant Learning Space">
+      <div class="why-content">
+        <h3>Mission Statement</h3>
+        <p>
+          Clearly articulate your school’s philosophy and goals, providing insight into your commitment to early childhood education.
+        </p>
+      </div>
+    </div>
+  
+    <!-- Reason 2 -->
+    <div class="why-item reverse">
+      <img src="suhasapic2.jpg" alt="Early Development">
+      <div class="why-content">
+        <h3>Qualified and Passionate Educators</h3>
+        <p>
+          Highlight the credentials and dedication of your teaching staff, emphasizing their expertise in early childhood development.
+        </p>
+      </div>
+    </div>
+  
+    <!-- Reason 3 -->
+    <div class="why-item">
+      <img src="suhasapic3.jpg" alt="Comprehensive Curriculum">
+      <div class="why-content">
+        <h3>Comprehensive Curriculum</h3>
+        <p>
+          Describe your holistic approach to education, detailing how it fosters cognitive, social, and emotional growth in children.
+        </p>
+      </div>
+    </div>
+  
+    <!-- Reason 4 -->
+    <div class="why-item reverse">
+      <img src="suhasapic4.jpg" alt="Safe Environment">
+      <div class="why-content">
+        <h3>Safe and Stimulating Learning Environment</h3>
+        <p>
+          Showcase how your facilities are designed to be both secure and conducive to exploration and learning.
+        </p>
+      </div>
+    </div>
+  
+    <!-- Reason 5 -->
+    <div class="why-item">
+      <img src="suhasapic5.jpg" alt="Individual Attention">
+      <div class="why-content">
+        <h3>Family Engagement</h3>
+        <p>
+            Explain your initiatives to involve families in the educational journey, strengthening the home-school connection.
+        </p>
+      </div>
+    </div>
+  
+    <!-- Reason 6 -->
+    <div class="why-item reverse">
+      <img src="suhasapic7.jpg" alt="Parental Involvement">
+      <div class="why-content">
+        <h3>Positive Outcomes</h3>
+        <p>
+            Provide evidence of your program’s effectiveness, such as testimonials or success stories, to build trust with prospective
+            parents.  
+        </p>
+      </div>
+    </div>
+
+  
+    <!-- Reason 7 (NEW) 
+    <div class="why-item">
+      <img src="suhasapic7.jpg" alt="Extracurricular Activities">
+      <div class="why-content">
+        <h3>Enriching Extracurricular Activities</h3>
+        <p>
+          Offer a variety of extracurricular programs that promote creativity, physical health, and teamwork beyond academic learning.
+        </p>
+      </div>
+    </div>
+  
+    <!Reason 8 (NEW) 
+    <div class="why-item reverse">
+      <img src="suhasapic8.jpg" alt="Technology Integration">
+      <div class="why-content">
+        <h3>Innovative Technology Integration</h3>
+        <p>
+          Leverage modern technology to enhance learning, fostering digital literacy and preparing children for future technological advancements.
+        </p>
+      </div>
+    </div>
+  
+  </section> *>
+</body>
+</html>
